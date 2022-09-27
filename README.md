@@ -7,7 +7,7 @@
 
 H1-H5 headers in page will "stick" to top on page scroll, helping you not to loose reading section name.
 
-⚠ ! Calculations are very tricky, so reload logseq after inslallin/uninstalling Tabs plugin or enabling themes! ⚠
+⚠ Calculations are very tricky, so reload Logseq _(Ctrl/Cmd + R)_ after installing/uninstalling "Tabs" plugin or switching themes! ⚠
 
 ![Sticky headers](screenshots/sticky-headers.gif)
 
