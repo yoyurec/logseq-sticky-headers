@@ -21,9 +21,10 @@ From Logseq store - `Plugins -> Marketplace`.
 ![](./screenshots/market.png)
 
 
-## Recommended plugins
+## Recommended plugins/themes
 * 🐱‍👤 [Solarized Extended](https://github.com/yoyurec/logseq-solarized-extended-theme) theme
 * ⭐ [Awesome Links](https://github.com/yoyurec/logseq-awesome-links)
+* 📰 [Banners](https://github.com/yoyurec/logseq-banners-plugin)
 
 ## What is Logseq?
 Logseq is a privacy-first, open-source knowledge base. Visit https://logseq.com for more information.
