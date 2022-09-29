@@ -5,9 +5,9 @@
     </a>
 </p>
 
-H1-H5 headers in page will "stick" to top on page scroll, helping you not to loose reading section name.
+`H1-H5` headers in page will "stick" to top on page scroll, helping you not to loose reading section name.
 
-⚠ Calculations are very tricky, so reload Logseq _(Ctrl/Cmd + R)_ after installing/uninstalling "Tabs" plugin or switching themes! ⚠
+⚠ Position calculations are tricky, so reloading Logseq _(Ctrl/Cmd + R)_ sometimes needed after installing/uninstalling plugins or switching themes! ⚠
 
 ![Sticky headers](screenshots/sticky-headers.gif)
 
@@ -23,7 +23,7 @@ From Logseq store - `Plugins -> Marketplace`.
 
 ## Recommended plugins
 * 🐱‍👤 [Solarized Extended](https://github.com/yoyurec/logseq-solarized-extended-theme) theme
-* ⚡ [Awesome Links](https://github.com/yoyurec/logseq-awesome-links)
+* ⭐ [Awesome Links](https://github.com/yoyurec/logseq-awesome-links)
 
 ## What is Logseq?
 Logseq is a privacy-first, open-source knowledge base. Visit https://logseq.com for more information.

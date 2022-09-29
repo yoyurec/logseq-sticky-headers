@@ -8,8 +8,6 @@
   z-index: 2!important;
   background-color: var(--ls-primary-background-color);
   border-bottom: 1px dotted var(--ls-border-color);
-  border-top: 2px dotted var(--ls-border-color);
-  padding-top: 2px;
 }
 
 .is-sticky :is(h1,h2,h3,h4,h5)::before {
