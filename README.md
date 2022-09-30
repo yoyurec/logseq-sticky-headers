@@ -1,11 +1,11 @@
-<h1 align="center">"Sticky headers" plugin for Logseq</h1>
+<h1 align="center">"Sticky Headers" plugin for Logseq</h1>
 <p align="center">
     <a href="https://github.com/yoyurec/logseq-sticky-headers">
         <img src="icon.png" alt="logo" width="128" height="128" />
     </a>
 </p>
 
-`H1-H5` headers in page will "stick" to top on page scroll, helping you not to loose reading section name.
+`H1-H5` headers on the page will "stick" to the top when the page scrolls, helping you not to lose reading section names.
 
 ⚠ Position calculations are tricky, so reloading Logseq _(Ctrl/Cmd + R)_ sometimes needed after installing/uninstalling plugins or switching themes! ⚠
 
@@ -23,8 +23,10 @@ From Logseq store - `Plugins -> Marketplace`.
 
 ## Recommended plugins/themes
 * 🐱‍👤 [Solarized Extended](https://github.com/yoyurec/logseq-solarized-extended-theme) theme
+* ⚡ [Awesome UI](https://github.com/yoyurec/logseq-awesome-ui)
 * ⭐ [Awesome Links](https://github.com/yoyurec/logseq-awesome-links)
 * 📰 [Banners](https://github.com/yoyurec/logseq-banners-plugin)
+* 📌 [Sticky Headers](https://github.com/yoyurec/logseq-sticky-headers)
 
 ## What is Logseq?
 Logseq is a privacy-first, open-source knowledge base. Visit https://logseq.com for more information.

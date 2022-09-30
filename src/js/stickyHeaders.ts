@@ -16,7 +16,6 @@ const initHeadersMutationObserver = () => {
     headersMutationObserverConfig = { childList: true, subtree: true };
     headersMutationObserver = new MutationObserver(headersMutationCallback);
 }
-
 const headersMutationCallback: MutationCallback = function (mutationsList) {
     for (let i = 0; i < mutationsList.length; i++) {
         const addedNode = mutationsList[i].addedNodes[0] as HTMLElement;
@@ -28,8 +27,8 @@ const headersMutationCallback: MutationCallback = function (mutationsList) {
             }
         }
         if (
-            (addedNode && addedNode.classList.contains('lsp-iframe-sandbox-container'))
-            || (removedNode && removedNode.classList.contains('lsp-iframe-sandbox-container'))
+            (addedNode && addedNode.classList && addedNode.classList.contains('lsp-iframe-sandbox-container'))
+            || (removedNode && removedNode.classList && removedNode.classList.contains('lsp-iframe-sandbox-container'))
         ) {
             console.log(`StickyHeaders: plugin status change detected`);
             setTimeout(() => {
@@ -38,7 +37,6 @@ const headersMutationCallback: MutationCallback = function (mutationsList) {
         }
     }
 }
-
 const runHeadersMutationObserver = () => {
     if (!mainContentContainer) {
         return;
@@ -46,24 +44,24 @@ const runHeadersMutationObserver = () => {
     headersMutationObserver.observe(doc.body, headersMutationObserverConfig);
 }
 
-const attachHeadersIntersectObserver = (el: HTMLElement) => {
+const initHeadersIntersectObserver = () => {
     headersIntersectObserverConfig = {
         root: mainContentContainer,
         rootMargin: `${intersectionTop}px 0px 0px 0px`,
         threshold: [1]
     };
-    const headersIntersectCallback: IntersectionObserverCallback = (entryList) => {
-        for (let i = 0; i < entryList.length; i++) {
-            const entryItem = entryList[i];
-            const header = entryItem.target.querySelector(headersSelector);
-            if (header) {
-                const doToggle = (entryItem.intersectionRatio < 1) && (entryItem.boundingClientRect.top < entryItem.intersectionRect.top);
-                entryItem.target.classList.toggle('is-sticky', doToggle);
-            }
+    headersIntersectObserver = new IntersectionObserver(headersIntersectCallback, headersIntersectObserverConfig);
+}
+
+const headersIntersectCallback: IntersectionObserverCallback = (entryList) => {
+    for (let i = 0; i < entryList.length; i++) {
+        const entryItem = entryList[i];
+        const header = entryItem.target.querySelector(headersSelector);
+        if (header) {
+            const doToggle = (entryItem.intersectionRatio < 1) && (entryItem.boundingClientRect.top < entryItem.intersectionRect.top);
+            entryItem.target.classList.toggle('is-sticky', doToggle);
         }
     }
-    headersIntersectObserver = new IntersectionObserver(headersIntersectCallback, headersIntersectObserverConfig);
-    headersIntersectObserver.observe(el);
 }
 
 const initHeaders = (headersList: NodeListOf<Element>) => {
@@ -71,13 +69,12 @@ const initHeaders = (headersList: NodeListOf<Element>) => {
         const headerItem = headersList[i] as HTMLElement;
         if (headerItem && headerItem.querySelector(headersSelector)) {
             headerItem.classList.add('will-stick');
-            attachHeadersIntersectObserver(headerItem);
+            headersIntersectObserver.observe(headerItem);
         }
     }
 }
 
 const uninitHeaders = () => {
-    headersIntersectObserver.disconnect();
     const headersList = doc.querySelectorAll('.will-stick');
     for (let i = 0; i < headersList.length; i++) {
         const headerItem = headersList[i] as HTMLElement;
@@ -90,6 +87,7 @@ const headersLoad = () => {
     setTimeout(() => {
         const headersList = doc.querySelectorAll(headersWrapperSelector);
         calcDimensions();
+        initHeadersIntersectObserver();
         initHeaders(headersList);
         runHeadersMutationObserver();
     }, 5000);
@@ -100,10 +98,12 @@ const headersUnload = () => {
 }
 
 const reLoad = () => {
-    uninitHeaders()
+    uninitHeaders();
     setTimeout(() => {
-        const headersList = doc.querySelectorAll(headersWrapperSelector);
+        headersIntersectObserver.disconnect();
         calcDimensions();
+        initHeadersIntersectObserver();
+        const headersList = doc.querySelectorAll(headersWrapperSelector);
         initHeaders(headersList);
     }, 5000);
 }
@@ -119,8 +119,7 @@ const calcDimensions = () => {
     let tabsHeight = 0;
     let mainContentContainerPTop = 0;
     let compensateTop = 0;
-    if (doc.body.classList.contains('is-solext')) {
-        //doc.querySelector(`[data-injected-style="tabs--top-padding-logseq-tabs"]`)?.remove();
+    if (doc.body.classList.contains('is-solext') || doc.body.classList.contains('is-awesomeUI')) {
         compensateTop = doc.getElementById('head')?.getBoundingClientRect().height || 0;
     }
     if (mainContentContainer) {
