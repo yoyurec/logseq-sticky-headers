@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.1.0...v1.1.1) (2022-09-30)
+
+
+### Bug Fixes
+
+* **mutation observer:** init optimization ([056e101](https://github.com/yoyurec/logseq-sticky-headers/commit/056e10154d6c74912e9db2fa9253e630fb070653))
+
 # [1.1.0](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.0.0...v1.1.0) (2022-09-29)
 
 
