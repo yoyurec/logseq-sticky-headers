@@ -1,7 +1,7 @@
 <h1 align="center">"Sticky Headers" plugin for Logseq</h1>
 <p align="center">
     <a href="https://github.com/yoyurec/logseq-sticky-headers">
-        <img src="icon.png" alt="logo" width="128" height="128" />
+        <img src="https://github.com/yoyurec/logseq-sticky-headers/raw/main/icon.png" alt="logo" width="128" height="128" />
     </a>
 </p>
 
@@ -9,7 +9,7 @@
 
 ⚠ Position calculations are tricky, so reloading Logseq _(Ctrl/Cmd + R)_ sometimes needed after installing/uninstalling plugins or switching themes! ⚠
 
-![Sticky headers](screenshots/sticky-headers.gif)
+![Sticky headers](https://github.com/yoyurec/logseq-sticky-headers/raw/main/screenshots/sticky-headers.gif)
 
 
 ## If you ❤ what i'm doing - you can support my work! ☕
@@ -18,11 +18,11 @@
 ## Install theme
 From Logseq store - `Plugins -> Marketplace`.
 
-![](./screenshots/market.png)
+![](https://github.com/yoyurec/logseq-sticky-headers/raw/main/screenshots/market.png)
 
 
 ## Recommended plugins/themes
-* 🐱‍👤 [Solarized Extended](https://github.com/yoyurec/logseq-solarized-extended-theme) theme
+* 🐱‍👤 [Awesome Styler](https://github.com/yoyurec/logseq-awesome-styler) theme
 * ⚡ [Awesome UI](https://github.com/yoyurec/logseq-awesome-ui)
 * ⭐ [Awesome Links](https://github.com/yoyurec/logseq-awesome-links)
 * 📰 [Banners](https://github.com/yoyurec/logseq-banners-plugin)
