@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.1.1...v1.2.0) (2022-10-04)
+
+
+### Features
+
+* **core:** deep headers and sticky styles ([0fbb864](https://github.com/yoyurec/logseq-sticky-headers/commit/0fbb864320c4d8fbdbb9ceb71725c3b7fa46cdc3))
+
 ## [1.1.1](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.1.0...v1.1.1) (2022-09-30)
 
 
