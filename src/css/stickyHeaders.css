@@ -1,21 +1,49 @@
-.will-stick {
-  position: sticky;
-  top: var(--sticky-headers-top);
-  z-index: 1;
+.will-stick > .flex-row {
+    position: sticky;
+    top: var(--sticky-headers-top);
+    z-index: 1;
+    background-color: var(--ls-primary-background-color);
 }
 
-.is-sticky {
-  z-index: 2!important;
-  background-color: var(--ls-primary-background-color);
-  border-bottom: 1px dotted var(--ls-border-color);
+.will-stick .is-sticky {
+    height: 2em;
+    z-index: 2;
+    border-bottom: 1px dotted var(--ls-border-color);
+    height: 2.2em;
 }
 
-.is-sticky :is(h1,h2,h3,h4,h5)::before {
-  position: absolute;
-  top: 1px;
-  left: -44px;
-  content: '\ec9c\0020';
-  display: inline-block;
-  font-family: tabler-icons;
-  color: var(--ls-link-text-color);
+.will-stick[level='2'] .is-sticky {
+    margin-left: -31px;
+}
+
+.will-stick[level='3'] .is-sticky {
+    margin-left: -62px;
+}
+
+.will-stick[level="4"] .is-sticky {
+    margin-left: -93px;
+}
+
+.is-sticky::before {
+    position: absolute;
+    top: 0;
+    content: '\ec9c\0020';
+    display: inline-block;
+    font-family: tabler-icons;
+    font-size: 1.4em;
+    color: var(--ls-link-text-color);
+}
+
+.is-sticky :is(h1, h2, h3, h4, h5) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.is-sticky > div:first-child {
+    visibility: hidden;
+}
+
+.will-stick > div > div:first-child * {
+    transition: none;
 }

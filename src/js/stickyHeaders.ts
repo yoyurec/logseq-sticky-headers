@@ -1,7 +1,7 @@
 import '@logseq/libs';
 import styles from '../css/stickyHeaders.css';
 
-const headersWrapperSelector = `.page-blocks-inner > div > div > div > div > div > div > .ls-block:not([haschild='']):not([data-refs-self='["quote"]']):not([data-refs-self='["card"]']):not(.pre-block) > .flex-row`;
+const headersWrapperSelector = `#main-content-container .page-blocks-inner .ls-block:not([haschild='']):not([data-collapsed]):not([data-refs-self='["quote"]']):not([data-refs-self='["card"]']):not(.pre-block)`;
 const headersSelector = ':is(h1, h2, h3, h4, h5)';
 
 let doc: Document;
@@ -21,9 +21,13 @@ const headersMutationCallback: MutationCallback = function (mutationsList) {
         const addedNode = mutationsList[i].addedNodes[0] as HTMLElement;
         const removedNode = mutationsList[i].removedNodes[0] as HTMLElement;
         if (addedNode && addedNode.childNodes.length) {
-            const headersList = addedNode.querySelectorAll(headersWrapperSelector);
-            if (headersList.length) {
-                initHeaders(headersList);
+            const header = addedNode.querySelector(headersSelector);
+            if (header) {
+                console.log('header added');
+                const block = header.closest(`.ls-block:not([haschild=''])`);
+                if (block) {
+                    initHeaders([block]);
+                }
             }
         }
         if (
@@ -64,13 +68,17 @@ const headersIntersectCallback: IntersectionObserverCallback = (entryList) => {
     }
 }
 
-const initHeaders = (headersList: NodeListOf<Element>) => {
-    for (let i = 0; i < headersList.length; i++) {
-        const headerItem = headersList[i] as HTMLElement;
-        if (headerItem && headerItem.querySelector(headersSelector)) {
-            headerItem.classList.add('will-stick');
-            headersIntersectObserver.observe(headerItem);
+const initHeaders = (blocksList: NodeListOf<Element> | Element[]) => {
+    for (let i = 0; i < blocksList.length; i++) {
+        const blockItem = blocksList[i] as HTMLElement;
+        if (blockItem) {
+            const headerHolder = blockItem.firstChild as Element;
+            if (headerHolder.querySelector(headersSelector)) {
+                blockItem.classList.add('will-stick');
+                headersIntersectObserver.observe(headerHolder);
+            }
         }
+
     }
 }
 
