@@ -12,18 +12,6 @@
     height: 2.2em;
 }
 
-.will-stick[level='2'] .is-sticky {
-    margin-left: -31px;
-}
-
-.will-stick[level='3'] .is-sticky {
-    margin-left: -62px;
-}
-
-.will-stick[level="4"] .is-sticky {
-    margin-left: -93px;
-}
-
 .is-sticky::before {
     position: absolute;
     top: 0;
@@ -32,6 +20,12 @@
     font-family: tabler-icons;
     font-size: 1.4em;
     color: var(--ls-link-text-color);
+}
+
+.will-stick[level='2'] .is-sticky::before,
+.will-stick[level='3'] .is-sticky::before,
+.will-stick[level="4"] .is-sticky::before {
+    content: '\ea61';
 }
 
 .is-sticky :is(h1, h2, h3, h4, h5) {
@@ -46,4 +40,9 @@
 
 .will-stick > div > div:first-child * {
     transition: none;
+}
+
+/* hide bullets threading lines */
+.is-sticky > .block-content-wrapper::before {
+    display: none;
 }
