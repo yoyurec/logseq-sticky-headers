@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.2.0...v1.3.0) (2022-10-05)
+
+
+### Features
+
+* **listener:** add new headers added on edit, add route change, fix bugs ([f7e158b](https://github.com/yoyurec/logseq-sticky-headers/commit/f7e158b13dbe33204f341a0467f111909fc011ec))
+
 # [1.2.0](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.1.1...v1.2.0) (2022-10-04)
 
 
