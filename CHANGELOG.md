@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.3.0...v1.4.0) (2022-10-05)
+
+
+### Features
+
+* **levels:** add arrow icons, revert header text indent ([09544d3](https://github.com/yoyurec/logseq-sticky-headers/commit/09544d398e7207769046731a39066a51ad758250))
+
 # [1.3.0](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.2.0...v1.3.0) (2022-10-05)
 
 
