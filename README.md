@@ -5,12 +5,12 @@
     </a>
 </p>
 
-`H1-H5` headers on the page will "stick" to the top when the page scrolls, helping you not to lose reading section names.
-
-⚠ Position calculations are tricky, so reloading Logseq _(Ctrl/Cmd + R)_ sometimes needed after installing/uninstalling plugins or switching themes! ⚠
+`h1-h5` headers on the page will "stick" to the top when the page scrolls, helping you not to lose reading section names.
+* Deep headers also stick!
+* Auto stick on edit - new headers detection
+* Leveling indent
 
 ![Sticky headers](https://github.com/yoyurec/logseq-sticky-headers/raw/main/screenshots/sticky-headers.gif)
-
 
 ## If you ❤ what i'm doing - you can support my work! ☕
 <a href="https://www.buymeacoffee.com/yoyurec" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 178px !important;" ></a>
