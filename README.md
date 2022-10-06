@@ -5,10 +5,12 @@
     </a>
 </p>
 
-`h1-h5` headers on the page will "stick" to the top when the page scrolls, helping you not to lose reading section names.
+`h1-h5` headers blocks (which have child blocks) on the page will "stick" to the top when the page scrolls, helping you not to lose reading section names.
 * Deep headers also stick!
 * Auto stick on edit - new headers detection
 * Leveling indent
+
+**PS:** Proper structure - just header in block, no additional multiline content via `Shift+Enter`
 
 ![Sticky headers](https://github.com/yoyurec/logseq-sticky-headers/raw/main/screenshots/sticky-headers.gif)
 
@@ -16,7 +18,7 @@
 <a href="https://www.buymeacoffee.com/yoyurec" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 178px !important;" ></a>
 
 ## Install theme
-From Logseq store - `Plugins -> Marketplace`.
+From Logseq store - `Plugins -> Marketplace`
 
 ![](https://github.com/yoyurec/logseq-sticky-headers/raw/main/screenshots/market.png)
 

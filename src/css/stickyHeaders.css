@@ -6,7 +6,6 @@
 }
 
 .will-stick .is-sticky {
-    height: 2em;
     z-index: 2;
     border-bottom: 1px dotted var(--ls-border-color);
     height: 2.2em;
@@ -35,6 +34,10 @@
 }
 
 .is-sticky > div:first-child {
+    visibility: hidden;
+}
+
+.is-sticky .block-body {
     visibility: hidden;
 }
 
