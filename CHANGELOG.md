@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.4.0...v1.4.1) (2022-10-06)
+
+
+### Bug Fixes
+
+* **header:** with multiline sibling text (via shift-enter) ([05369d4](https://github.com/yoyurec/logseq-sticky-headers/commit/05369d4b9aec947bf7e4d5469765befa7af40191))
+
 # [1.4.0](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.3.0...v1.4.0) (2022-10-05)
 
 
