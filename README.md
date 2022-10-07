@@ -15,7 +15,8 @@
 ![Sticky headers](https://github.com/yoyurec/logseq-sticky-headers/raw/main/screenshots/sticky-headers.gif)
 
 ## If you ❤ what i'm doing - you can support my work! ☕
-<a href="https://www.buymeacoffee.com/yoyurec" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 178px !important;" ></a>
+
+<a href="https://www.buymeacoffee.com/yoyurec"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=yoyurec&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff" /></a>
 
 ## Install theme
 From Logseq store - `Plugins -> Marketplace`
