@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.4.1...v1.4.2) (2022-10-12)
+
+
+### Bug Fixes
+
+* **headers:** size normalized, no border, no margin ([623ce33](https://github.com/yoyurec/logseq-sticky-headers/commit/623ce33a7afc6f09f55e3644780f86729d541dcd))
+
 ## [1.4.1](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.4.0...v1.4.1) (2022-10-06)
 
 
