@@ -31,6 +31,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin: 0;
+    border: 0;
+    font-size: 1em;
 }
 
 .is-sticky > div:first-child {
