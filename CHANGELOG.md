@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.4.2...v1.4.3) (2022-10-28)
+
+
+### Bug Fixes
+
+* awUi classname upd ([7615b98](https://github.com/yoyurec/logseq-sticky-headers/commit/7615b9835b48efaa7f63ea376cc60033a242dfbd))
+
 ## [1.4.2](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.4.1...v1.4.2) (2022-10-12)
 
 
