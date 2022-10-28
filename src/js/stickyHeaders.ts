@@ -102,7 +102,7 @@ const calcDimensions = () => {
     let tabsHeight = 0;
     let mainContentContainerPTop = 0;
     let compensateTop = 0;
-    if (doc.body.classList.contains('is-awesomeUI')) {
+    if (doc.body.classList.contains('is-awUi-enabled')) {
         compensateTop = doc.getElementById('head')?.getBoundingClientRect().height || 0;
     }
     if (mainContentContainer) {
