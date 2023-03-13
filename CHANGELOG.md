@@ -1,3 +1,11 @@
+## [1.4.4](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.4.3...v1.4.4) (2023-03-13)
+
+
+### Bug Fixes
+
+* **awui:** positioon ([814623f](https://github.com/yoyurec/logseq-sticky-headers/commit/814623ff9fb53a9fd1cc51abb3e9d1b5e83fbda5))
+* **build:** node 18 ([a14d38c](https://github.com/yoyurec/logseq-sticky-headers/commit/a14d38cbd9ab38fb932bdd1e34aaf035462ce0b8))
+
 ## [1.4.3](https://github.com/yoyurec/logseq-sticky-headers/compare/v1.4.2...v1.4.3) (2022-10-28)
 
 

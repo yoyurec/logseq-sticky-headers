@@ -1,7 +1,7 @@
 {
   "name": "logseq-sticky-headers",
   "description": "Sticky H1-H5 headers on page scroll",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "author": "yoyurec <yoyurec@gmail.com>",
   "main": "dist/index.html",
   "scripts": {
