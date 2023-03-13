@@ -33,7 +33,8 @@
     white-space: nowrap;
     margin: 0;
     border: 0;
-    font-size: 1em;
+    font-size: 1.1em !important;
+    transform: none !important;
 }
 
 .is-sticky > div:first-child {

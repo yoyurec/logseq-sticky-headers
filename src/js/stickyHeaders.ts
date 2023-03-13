@@ -99,19 +99,10 @@ const headersUnload = () => {
 
 const calcDimensions = () => {
     let stickyTop = 0;
-    let tabsHeight = 0;
     let mainContentContainerPTop = 0;
-    let compensateTop = 0;
-    if (doc.body.classList.contains('is-awUi-enabled')) {
-        compensateTop = doc.getElementById('head')?.getBoundingClientRect().height || 0;
-    }
     if (mainContentContainer) {
         mainContentContainerPTop = parseInt(getComputedStyle(mainContentContainer).paddingTop, 10);
-        const tabs = doc.getElementById('logseq-tabs_iframe');
-        if (tabs) {
-            tabsHeight = tabs.getBoundingClientRect().height;
-        }
-        intersectionTop = mainContentContainerPTop - tabsHeight - compensateTop;
+        intersectionTop = mainContentContainerPTop;
         stickyTop = intersectionTop * (-1) - 1;
     }
     root.style.setProperty('--sticky-headers-top', `${stickyTop}px`);
