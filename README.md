@@ -1,9 +1,20 @@
+## Other my plugins/themes
+* 🪓 [Awesome UI](https://github.com/yoyurec/logseq-awesome-ui)
+* 🎨 [Awesome Styler](https://github.com/yoyurec/logseq-awesome-styler)
+* 📝 [Awesome Content](https://github.com/yoyurec/logseq-awesome-content)
+* 📋 [Awesome Props](https://github.com/yoyurec/logseq-awesome-props)
+* ⭐ [Awesome Links](https://github.com/yoyurec/logseq-awesome-links)
+* ✨ [Tabler picker](https://github.com/yoyurec/logseq-tabler-picker)
+* 📰 [Banners](https://github.com/yoyurec/logseq-banners-plugin)
+
 <h1 align="center">"Sticky Headers" plugin for Logseq</h1>
 <p align="center">
     <a href="https://github.com/yoyurec/logseq-sticky-headers">
         <img src="https://github.com/yoyurec/logseq-sticky-headers/raw/main/icon.png" alt="logo" width="128" height="128" />
     </a>
 </p>
+
+⚠ Experimental! Will work 99% only with AweomeUI + Awesome Styler nstalled! Other thems and Tabs plugin support not garanted!
 
 `h1-h5` headers blocks (which have child blocks) on the page will "stick" to the top when the page scrolls, helping you not to lose reading section names.
 * Deep headers also stick!
@@ -24,12 +35,7 @@ From Logseq store - `Plugins -> Marketplace`
 ![](https://github.com/yoyurec/logseq-sticky-headers/raw/main/screenshots/market.png)
 
 
-## Recommended plugins/themes
-* 🐱‍👤 [Awesome Styler](https://github.com/yoyurec/logseq-awesome-styler) theme
-* ⚡ [Awesome UI](https://github.com/yoyurec/logseq-awesome-ui)
-* ⭐ [Awesome Links](https://github.com/yoyurec/logseq-awesome-links)
-* 📰 [Banners](https://github.com/yoyurec/logseq-banners-plugin)
-* 📌 [Sticky Headers](https://github.com/yoyurec/logseq-sticky-headers)
+
 
 ## What is Logseq?
 Logseq is a privacy-first, open-source knowledge base. Visit https://logseq.com for more information.
